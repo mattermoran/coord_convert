@@ -1,0 +1,18 @@
+name: coord_convert
+description: Small library to convert coordinates between different coordinate systems.
+version: 0.0.1
+author: Alex Miller <mattermoran@gmail.com>
+homepage:
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
