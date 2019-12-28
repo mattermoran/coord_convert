@@ -22,6 +22,12 @@ class CoordConvert {
     return Coords(ggLat, ggLng);
   }
 
+  static Coords bd09towgs84(Coords coords) {
+    if (isOutOfChina(coords)) return coords;
+    final gcj02Coords = bd09togcj02(coords);
+    return gcj02towgs84(gcj02Coords);
+  }
+
   static Coords gcj02tobd09(Coords coords) {
     final double z = sqrt(coords.longitude * coords.longitude +
             coords.latitude * coords.latitude) +
@@ -48,6 +54,12 @@ class CoordConvert {
     final double mglat = coords.latitude + dlat;
     final double mglng = coords.longitude + dlng;
     return Coords(mglat, mglng);
+  }
+
+  static Coords wgs84tobd09(Coords coords) {
+    if (isOutOfChina(coords)) return coords;
+    final gcj02Coords = wgs84togcj02(coords);
+    return gcj02tobd09(gcj02Coords);
   }
 
   static Coords gcj02towgs84(Coords coords) {
