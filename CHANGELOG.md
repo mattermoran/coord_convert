@@ -1,3 +1,7 @@
+## [1.0.0]
+
+- Migrate to null safety
+
 ## [0.1.0]
 
 - Add _WGS-84_ to _BD-09_ and _BD-09_ to _WGS-84_

@@ -18,7 +18,7 @@ Based on formulas from [here](https://blog.csdn.net/a13570320979/article/details
 
 ```yaml
 dependencies:
-  coord_convert: 0.1.0
+  coord_convert: 1.0.0
 ```
 
 ## Usage examples

@@ -1,6 +1,6 @@
 name: coord_convert
 description: Small library to convert coordinates between different coordinate systems.
-version: 0.1.0
+version: 1.0.0
 homepage: https://github.com/mattermoran/coord_convert
 
 environment:
